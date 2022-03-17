@@ -1,0 +1,192 @@
+<mat-toolbar color="primary">
+    <span>Pshop</span><mat-icon>shopping_basket</mat-icon>
+    <div class="spacer"></div>
+    <mat-icon aria-hidden="false" aria-label="Example home icon" >home</mat-icon>
+  
+      <a mat-button>Home</a>
+      <a mat-button>About</a>
+      <a mat-button routerLink="/login">Login</a>
+      <a mat-button routerLink="/signup">Signup</a>
+    </mat-toolbar>
+    <h2 style="text-align: center;">Latest Phones</h2>
+   
+    <mat-tab-group mat-stretch-tabs class="example-stretched-tabs mat-elevation-z4">
+        <mat-tab label="Apple"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjnmi2sfyJaimBf5PVAirPq41i9IT0U6BLJA&usqp=CAU" style="width: 400px;" ><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqJ6CRq3mHhLCelV8ybUh8zI7Ly7nwEsJFLnGQ1EexBZqNfeUUkDdkCJk0XyPDYaOZDjI&usqp=CAU" style="width: 400px;"> <b style="text-align: center;">coming soon</b></mat-tab>
+        <mat-tab label="Oneplus"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYt53bVLh6KiPC3SMf0gahwE0DiLieViu5YQ&usqp=CAU" style="width: 400px;" >  <img src="data:image/jpeg;base64,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" style="width: 400px;" ><b style="text-align: center;">coming soon</b></mat-tab>
+        <mat-tab label="Samsung">  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpa9ATb-Y00OtliOQi6tNmU-MQgtLhWxmeJR_duk8yLwg02BKnwO-DSBOGp1tqZDnpBhs&usqp=CAU" style="width: 400px;"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMVE49K2bwe-B2T7a272rDcYujJQHINKcyyQ&usqp=CAU" style="width: 400px;" ><b style="text-align: center;">coming soon</b> </mat-tab>
+      </mat-tab-group>
+      <br><br>
+  
+      <h1>Apple</h1> <mat-icon>iso</mat-icon>IOS
+      <div class="clearflix">
+        <div class="img-container">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjnmi2sfyJaimBf5PVAirPq41i9IT0U6BLJA&usqp=CAU" style="width: 50%; "> <br>
+          <h4>Iphone 13 pro max</h4> <br>
+          <h3><b>Price : </b><b>1,29,900</b> </h3>
+          <h2> <b>Description : </b> </h2>
+            <b>Display :</b> Super Retina XDR display with ProMotion <br>
+            17.0 cm / 6.7‑inch (diagonal) all‑screen OLED display <br>
+            2778x1284-pixel resolution at 458 ppi <br> 
+            <b>Processor : </b>A15 Bionic chip <br>
+            New 6‑core CPU with 2 performance and 4 efficiency cores <br>
+            New 5‑core GPU <br>
+            New 16‑core Neural Engine <br>
+            <b>Camera : </b>
+            Pro 12MP camera system: Telephoto, Wide and Ultra Wide cameras <br>
+            Telephoto: ƒ/2.8 aperture <br>
+            Wide: ƒ/1.5 aperture <br>
+            Ultra Wide: ƒ/1.8 aperture and 120° field of view <br>
+            3x optical zoom in, 2x optical zoom out; 6x optical zoom range <br>
+            Digital zoom up to 15x <br>
+            Night mode portraits enabled by LiDAR Scanner <br>
+            Portrait mode with advanced bokeh and Depth Control <br>
+            <button mat-button color="primary">Add to Cart</button>
+      
+        </div>
+        <div class="img-container">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqJ6CRq3mHhLCelV8ybUh8zI7Ly7nwEsJFLnGQ1EexBZqNfeUUkDdkCJk0XyPDYaOZDjI&usqp=CAU" style="width: 50%; "> <br>
+          <h4>Iphone 13 </h4> <br>
+          <h3><b>Price : </b><b>79,900</b> </h3>
+          <h2> <b>Description : </b> </h2>
+            <b>Display :</b> Super Retina XDR display with ProMotion <br>
+            17.0 cm / 6.7‑inch (diagonal) all‑screen OLED display <br>
+            2778x1284-pixel resolution at 458 ppi <br> 
+            <b>Processor : </b>A15 Bionic chip <br>
+            New 6‑core CPU with 2 performance and 4 efficiency cores <br>
+            New 5‑core GPU <br>
+            New 16‑core Neural Engine <br>
+            <b>Camera : </b>
+            Pro 12MP camera system: Telephoto, Wide and Ultra Wide cameras <br>
+            Telephoto: ƒ/2.8 aperture <br>
+            Wide: ƒ/1.5 aperture <br>
+            Ultra Wide: ƒ/1.8 aperture and 120° field of view <br>
+            3x optical zoom in, 2x optical zoom out; 6x optical zoom range <br>
+            Digital zoom up to 15x <br>
+            Night mode portraits enabled by LiDAR Scanner <br>
+            Portrait mode with advanced bokeh and Depth Control <br>
+            <button mat-button color="primary">Add to Cart</button>
+        </div>
+      </div> <br> <br> <br> <br>
+  
+      <b>coming soon</b>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  
+  <h1>OnePlus</h1><mat-icon>android</mat-icon>android
+  <div class="clearflix">
+    <div class="img-container">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYt53bVLh6KiPC3SMf0gahwE0DiLieViu5YQ&usqp=CAU" style="width: 50%;" alt="">
+    <h4>Oneplus 10 pro</h4>
+    <h3><b>Price : </b><b>65,900</b> </h3>
+    <h2> <b>Description : </b> </h2>
+    <b>Display : </b>6.70-inch (1440x3216) <br> 
+    <b>Processor : </b>Qualcomm Snapdragon 8 Gen 1 <br>
+    Octa core (3 GHz, Single core, Cortex X2 + 2.5 GHz, Tri core, Cortex A710 + 1.8 GHz, Quad core, Cortex A510) <br>
+    <b>Camera : </b>	48 MP f/1.8, Wide Angle, Primary Camera <br>
+    (23 mm focal length, 1.4" sensor size, 1.12µm pixel size) <br>
+    50 MP f/2.2, Ultra-Wide Angle Camera <br>
+    (14 mm focal length, 2.7" sensor size, 0.64µm pixel size) <br>
+    8 MP f/2.4, Telephoto Camera <br>
+    (77 mm focal length, 1µm pixel size) <br>
+    <button mat-button color="primary">Add to Cart</button>
+  
+  
+    </div>
+    <div class="img-container">
+        <img src="data:image/jpeg;base64,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" style="width: 50%;" alt="">
+        <h4>Oneplus 9 pro</h4>
+        <h3><b>Price : </b><b>59,900</b> </h3>
+        <h2> <b>Description</b> </h2>
+        <b>Display : </b>6.70-inch (1440x3216) <br> 
+        <b>Processor : </b>Qualcomm Snapdragon 8 Gen 1 <br>
+        Octa core (3 GHz, Single core, Cortex X2 + 2.5 GHz, Tri core, Cortex A710 + 1.8 GHz, Quad core, Cortex A510) <br>
+        <b>Camera : </b>	48 MP f/1.8, Wide Angle, Primary Camera <br>
+        (23 mm focal length, 1.4" sensor size, 1.12µm pixel size) <br>
+        50 MP f/2.2, Ultra-Wide Angle Camera <br>
+        (14 mm focal length, 2.7" sensor size, 0.64µm pixel size) <br>
+        8 MP f/2.4, Telephoto Camera <br>
+        (77 mm focal length, 1µm pixel size) <br>
+        <button mat-button color="primary">Add to Cart</button> 
+    
+    
+  
+        </div>
+  
+  </div> <br> <br> <br> <br>
+  
+  <b>coming soon</b>
+  
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  
+  
+  <h1 style="text-align: left;">Samsung</h1><mat-icon>android</mat-icon>android
+  
+  <div class="clearflix">
+    <div class="img-container">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpa9ATb-Y00OtliOQi6tNmU-MQgtLhWxmeJR_duk8yLwg02BKnwO-DSBOGp1tqZDnpBhs&usqp=CAU" style="width: 50%;"> <br>
+        <h4>S22 Ultra</h4> <br>
+        <h3><b>Price : </b><i class="fas fa-rupee-sign"></i><b> 1,09,000</b> </h3><br>
+      <h2> <b>Description</b> </h2>
+    <b>Display : </b> 6.8" edge Quad HD+ Dynamic AMOLED 2X <br>
+    <b>Processor : </b>Qualcomm Snapdragon 8 Gen 1 <br>
+    Octa core (3 GHz, Single core, Cortex X2 + 2.5 GHz, Tri core, Cortex A710 + 1.8 GHz, Quad core, Cortex A510) <br>
+    <b>Camera : </b>108MP Wide-angle Camera <br>
+    PDAF, OIS
+    Pixel size: 0.8μm (12MP 2.4μm)
+    FOV: 85˚ <br>
+    F.No (aperture): F1.8
+    1/1.33" image sensor size <br>
+    12MP Ultra Wide Camera
+    Dual Pixel AF <br>
+    Pixel size: 1.4μm
+    FOV: 120˚
+    F.No (aperture): F2.2
+    1/2.55" image sensor size <br>
+    <button mat-button color="primary">Add to Cart</button> 
+  
+    </div>
+    <div class="img-container">
+        
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMVE49K2bwe-B2T7a272rDcYujJQHINKcyyQ&usqp=CAU" style="width: 50%;"> <br>
+        <h4>S22+</h4> <br>
+        <h3><b>Price : </b><b>  75,000</b> </h3><br>
+        <h2> <b>Description</b> </h2> 
+    <b>Display : </b> 6.8" edge Quad HD+ Dynamic AMOLED 2X <br>
+    <b>Processor : </b>Qualcomm Snapdragon 8 Gen 1 <br>
+    Octa core (3 GHz, Single core, Cortex X2 + 2.5 GHz, Tri core, Cortex A710 + 1.8 GHz, Quad core, Cortex A510) <br>
+    <b>Camera : </b>108MP Wide-angle Camera <br>
+    PDAF, OIS
+    Pixel size: 0.8μm (12MP 2.4μm)
+    FOV: 85˚ <br>
+    F.No (aperture): F1.8
+    1/1.33" image sensor size <br>
+    12MP Ultra Wide Camera
+    Dual Pixel AF <br>
+    Pixel size: 1.4μm
+    FOV: 120˚
+    F.No (aperture): F2.2 <br><br>
+  
+    <button mat-button color="primary">Add to Cart</button> 
+    
+    </div>
+  
+  </div><br> <br> <br> <br>
+  
+ 
+  
+  <b>coming soon</b>  
+
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Add font awesome icons -->
+<div style="text-align: center; background-color: black;" >
+<a href="#" class="fa fa-facebook" style="width: 80px;"></a>
+<a href="#" class="fa fa-twitter" style="width: 80px;"></a>
+<a href="#" class="fa fa-instagram" style="width: 80px; " ></a>
+</div>
+<div style="background-color: blanchedalmond;">
+  <footer style="text-align: center;"><mat-icon > mail_outline</mat-icon>Pshop@gmail.com<mat-icon>  phone</mat-icon>+91-7892065575</footer>
+  
+  </div>
